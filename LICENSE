@@ -1,0 +1,84 @@
+PRISMATIC SHARDS THEME LICENSE
+
+Copyright (c) 2026 Ali Akbar Hyder and Prismatic Shards contributors
+
+NOTICE TO USERS:
+
+This is a RESTRICTED LICENSE. Please read the following terms carefully before
+downloading any part of this Prismatic Shards Omarchy theme repository.
+
+GRANT OF DOWNLOAD PERMISSION
+
+You are granted permission to download and access this Prismatic Shards theme
+repository for personal use, research, and evaluation purposes only. This license
+do NOT constitute a transfer of ownership or intellectual property rights.
+
+RESTRICTIONS ON USE
+
+1. EDITING PROHIBITION:
+   You MAY NOT modify, edit, alter, or create derivative works based on any part
+   of this Prismatic Shards theme repository. This includes, but is not limited
+   to:
+   - Modifying source code files (colors.toml, shell.toml, hyprland.lua, etc.)
+   - Changing configuration parameters
+   - Altering design elements, color schemes, or visual assets
+   - Creating themes based on or inspired by Prismatic Shards
+   - Removing, replacing, or modifying any files in this repository
+
+2. RESALE AND COMMERCIAL USE PROHIBITION:
+   You MAY NOT resell, distribute for profit, sublicense, or commercially exploit
+   any part of this Prismatic Shards theme repository without obtaining prior
+   written consent from the copyright holder. This includes:
+   - Selling copies of the theme or its components
+   - Distributing the theme in commercial products
+   - Using this theme in paid services or commercial projects
+   - Licensing this theme to third parties
+
+3. DISTRIBUTION LIMITATIONS:
+   - You may distribute the original, unmodified files only for backup purposes
+   - You may share the repository link, but not the files themselves (except as
+     required by fair use)
+   - Redistribution in any form requires explicit written permission
+
+4. ATTRIBUTION REQUIREMENTS:
+   When using this theme for personal, non-commercial purposes, you must retain
+   all original copyright notices, attribution information, and this license text
+   in its entirety. All references to the theme must credit "Prismatic Shards" and
+   "Fractured light. Unified system."
+
+5. NO WARRANTIES OR CONDITIONS:
+   This theme is provided "AS IS" without any warranties or guarantees. The
+   copyright holders are not responsible for any damages or issues arising from
+   the use of this theme.
+
+GOVERNING LAW AND DISPUTES
+
+This license is governed by the laws of the jurisdiction where the copyright
+holder resides. Any disputes arising from this license shall be resolved in
+accordance with applicable laws.
+
+TERMINATION
+
+This license terminates automatically if you violate any of the restrictions
+ outlined above. Upon termination, you must immediately cease all use and
+ return or destroy all copies of the theme repository.
+
+SEPARATION OF CONCERNS
+
+- The Prismatic Shards theme configuration files (colors.toml, shell.toml,
+  hyprland.lua) are licensed under these restrictive terms
+- Original artwork, assets, and documentation are covered by this license
+- References to external projects (Yaru icons, Omarchy, etc.) maintain their
+  separate licenses
+
+ENforcement
+
+Violations of this license may result in legal action. The copyright holder
+reserves the right to pursue all available legal remedies for license violations.
+
+This license constitutes the entire agreement between the parties regarding the
+Prismatic Shards theme repository and supersedes all prior or contemporaneous
+agreements or understandings.
+
+© 2026 Ali Akbar Hyder and Prismatic Shards contributors
+All rights reserved.

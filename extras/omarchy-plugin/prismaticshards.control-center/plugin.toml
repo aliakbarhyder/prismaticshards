@@ -1,0 +1,9 @@
+# Prismatic Shards control-center plugin manifest (Omarchy).
+name = "prismaticshards"
+description = "Liquid-glass control center: wifi, bluetooth, volume, brightness, theme toggle."
+version = "1.0.0"
+# Toggle entry wires to scripts/prismatic-shards-theme-toggle (radial reveal).
+[[toggle]]
+id = "theme"
+label = "Prismatic Glass"
+command = "prismatic-shards-theme-toggle"

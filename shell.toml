@@ -1,0 +1,164 @@
+# Prismatic Shards — Omarchy shell surfaces (dark)
+#
+# This is a hand-written replacement for the shell.toml that
+# `omarchy-theme-set-templates` would generate from colors.toml. Omarchy never
+# overwrites a file a theme ships itself, so these are the tokens the running
+# Omarchy shell reads into its `Color` and `Style` QML singletons.
+#
+# Tokens the shell reads:
+#   [bar] [hyprland] [controls] [spacing] [font] [popups] [tooltip]
+#   [notifications] [launcher] [menu] [polkit] [lock] [image-picker]
+#
+# Values may be hex, `rgba(RRGGBBAA)`, a gradient ("rgba(a) rgba(b) 45deg"),
+# or a cross-reference to another section's token ("hyprland.active-border").
+#
+# Liquid Glass rules used here:
+#   * every surface keeps alpha below 1.0 but never below ~0.65, so text stays
+#     readable over any wallpaper
+#   * blur comes from Hyprland layer rules in hyprland.lua, not from alpha
+#   * borders are 1px and mostly transparent — a highlight, not a frame
+#   * accent color is reserved for the active/selected state, so violet and
+#     magenta only appear where light is actually being refracted
+
+[bar]
+background = "#08090B"
+background-alpha = 0.68
+text = "#F2F4F8"
+active = "#C77DFF"
+scale-with-font = true
+size-horizontal = 30
+size-vertical = 34
+
+[hyprland]
+active-border = "rgba(4da3ffd9) rgba(8b7cffd9) rgba(f2a7d8b3) 45deg"
+active-border-foreground = "rgba(f2f4f8e6) rgba(63d7ffe6) 45deg"
+
+[controls]
+normal-color = "#F2F4F8"
+normal-fill-alpha = 0.05
+normal-border = "#F2F4F8"
+normal-border-width = 1
+normal-border-alpha = 0.16
+
+hover-cursor-color = "#F2F4F8"
+hover-cursor-fill-alpha = 0.10
+hover-cursor-border = "#4DA3FF"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.45
+
+focus-color = "#F2F4F8"
+focus-fill-alpha = 0.10
+focus-border = "#63D7FF"
+focus-border-width = 1
+focus-border-alpha = 0.55
+
+selected-color = "#F2F4F8"
+selected-fill-alpha = 0.16
+selected-border = "#4DA3FF"
+selected-border-width = 1
+selected-border-alpha = 0.60
+
+pressed-fill-alpha = 0.24
+selection-fill-alpha = 0.32
+
+[spacing]
+scale = 1.0
+scale-with-font = true
+panel-gap = 15
+panel-padding = 20
+popup-padding = 16
+row-gap = 9
+row-padding-x = 13
+control-padding-x = 11
+control-padding-y = 6
+control-height = 30
+popup-row-height = 30
+
+[font]
+base-size = 12
+
+[popups]
+background = "#0C0F13"
+background-alpha = 0.86
+text = "#F2F4F8"
+border = "hyprland.active-border"
+border-alpha = 0.45
+
+[tooltip]
+background = "#171B22"
+background-alpha = 0.94
+text = "#F2F4F8"
+border = "hyprland.active-border-foreground"
+border-alpha = 0.30
+
+[notifications]
+background = "#0C0F13"
+background-alpha = 0.88
+text = "#F2F4F8"
+border = "hyprland.active-border"
+border-alpha = 0.50
+border-width = 1
+border-width-left = 3
+countdown = "#63D7FF"
+
+[launcher]
+background = "#0C0F13"
+background-alpha = 0.90
+text = "#F2F4F8"
+border = "hyprland.active-border"
+border-alpha = 0.55
+scrim = "#08090B"
+scrim-alpha = 0.45
+selected-background = "#4DA3FF"
+selected-background-alpha = 0.18
+selected-text = "#63D7FF"
+selected-border = "#4DA3FF"
+selected-border-alpha = 0.80
+
+[menu]
+background = "#0C0F13"
+background-alpha = 0.92
+text = "#F2F4F8"
+border = "hyprland.active-border"
+border-alpha = 0.55
+scrim = "#08090B"
+scrim-alpha = 0.45
+selected-background = "#4DA3FF"
+selected-background-alpha = 0.16
+selected-text = "#63D7FF"
+selected-border = "#4DA3FF"
+selected-border-alpha = 0.70
+
+[polkit]
+background = "#0C0F13"
+background-alpha = 0.92
+text = "#F2F4F8"
+text-error = "#FF6472"
+border = "hyprland.active-border"
+border-error = "#FF6472"
+border-alpha = 0.55
+scrim = "#08090B"
+scrim-alpha = 0.50
+accent = "#4DA3FF"
+
+[lock]
+background = "#08090B"
+background-alpha = 0.72
+text = "#F2F4F8"
+placeholder = "#737B88"
+text-error = "#FF6472"
+border = "rgba(737b88b3) rgba(171b22aa) 45deg"
+border-active = "hyprland.active-border"
+border-error = "#FF6472"
+border-alpha = 0.90
+selection = "#4DA3FF"
+selection-alpha = 0.45
+
+[image-picker]
+scrim = "#08090B"
+scrim-alpha = 0.60
+text = "#F2F4F8"
+selected-border = "#4DA3FF"
+selected-border-alpha = 1.0
+unselected-border = "#F2F4F8"
+unselected-border-alpha = 0.22

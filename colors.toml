@@ -1,0 +1,63 @@
+# Prismatic Shards — dark palette
+#
+# Fractured light. Unified system.
+#
+# This file is the Omarchy theme contract: `omarchy-theme-set` reads it and
+# generates the active theme's terminal, btop, Chromium, Hyprland, Neovim,
+# Helix, VS Code, Obsidian and shell configuration from it.
+#
+# Grouping follows Omarchy's semantic-first convention: mode, then
+# accent/selection/muted, then backgrounds, then foregrounds, then named hues.
+# `hyprland_active_border` is a gradient — light refracting through the edge of
+# the glass — and feeds both Hyprland window borders and every shell border
+# that references `hyprland.active-border`.
+
+mode = "dark"
+
+accent = "#4DA3FF"
+selection = "#1C2431"
+muted = "#737B88"
+
+background = "#08090B"
+dark_background = "#0C0F13"
+darker_background = "#050607"
+lighter_background = "#11151A"
+
+foreground = "#F2F4F8"
+dark_foreground = "#8A93A3"
+light_foreground = "#C9D0DC"
+bright_foreground = "#FFFFFF"
+
+red = "#FF6472"
+yellow = "#FFD166"
+orange = "#FF9E64"
+green = "#57D99A"
+cyan = "#63D7FF"
+blue = "#4DA3FF"
+magenta = "#C77DFF"
+brown = "#6E5566"
+
+bright_red = "#FF8A94"
+bright_yellow = "#FFE199"
+bright_green = "#7FE8B4"
+bright_cyan = "#8FE4FF"
+bright_blue = "#7AB8FF"
+bright_magenta = "#DCA6FF"
+
+# --- Prismatic extension tokens -------------------------------------------
+# Omarchy resolves any key you define, so these are available to templates and
+# shell consumers as {{ surface }}, {{ elevated }}, {{ violet }} and {{ pink }}.
+surface = "#11151A"
+elevated = "#171B22"
+violet = "#8B7CFF"
+pink = "#F2A7D8"
+
+selection_background = "#1C2431"
+selection_foreground = "#F2F4F8"
+
+# --- Refracted light ------------------------------------------------------
+# Window borders: mostly graphite, splitting into blue/violet/pink where the
+# light catches the edge. Hyprland gradients accept a list of stops plus an
+# angle, which is what `hypr_gradient` / `shell_gradient` emit.
+hyprland_active_border = "rgba(4da3ffd9) rgba(8b7cffd9) rgba(f2a7d8b3) 45deg"
+hyprland_inactive_border = "rgba(737b8833) rgba(171b22aa) 45deg"

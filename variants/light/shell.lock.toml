@@ -1,0 +1,16 @@
+# Prismatic Shards — lock screen overrides (light)
+#
+# Same contract as the dark theme's shell.lock.toml: the filename names the
+# section, so this file carries only [lock] tokens.
+
+background = "#F3F5F8"
+background-alpha = 0.74
+text = "#16181C"
+placeholder = "#89919D"
+text-error = "#D94350"
+border = "rgba(89919d99) rgba(e9ecf1e6) 45deg"
+border-active = "rgba(1677ffcc) rgba(705febbb) rgba(d889baa6) 45deg"
+border-error = "#D94350"
+border-alpha = 0.85
+selection = "#1677FF"
+selection-alpha = 0.35

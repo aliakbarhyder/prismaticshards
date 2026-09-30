@@ -1,0 +1,54 @@
+#!/bin/bash
+# prismatic-shards-theme-toggle — animated dark/light switch.
+# Radial-reveal metaphor: wallpaper grows from toggle point (0.76,0.14),
+# shell tokens regenerate, cursor + compositor reload in step.
+set -euo pipefail
+THEME_DARK="prismatic-shards"
+THEME_LIGHT="prismatic-shards-light"
+STATE="$HOME/.local/state/omarchy/current"
+CUR_FILE="$STATE/theme"
+POS="0.76,0.14"
+
+current() {
+  if command -v omarchy-theme-current >/dev/null 2>&1; then
+    omarchy-theme-current 2>/dev/null || true
+  elif [[ -f "$CUR_FILE" ]]; then
+    cat "$CUR_FILE"
+  else
+    echo "$THEME_DARK"
+  fi
+}
+set_wallpaper() {
+  local img="$1"
+  [[ -f "$img" ]] || return 0
+  mkdir -p "$STATE"
+  ln -sfn "$img" "$STATE/background" 2>/dev/null || true
+  if command -v swww >/dev/null 2>&1; then
+    swww img "$img" --transition-type grow --transition-pos "$POS" \
+      --transition-duration 1.2 --transition-fps 60 2>/dev/null || true
+  elif command -v hyprctl >/dev/null 2>&1; then
+    hyprctl hyprpaper wallpaper ",$img" 2>/dev/null || true
+  fi
+}
+CUR="$(current)"
+if [[ "$CUR" == *light* ]]; then
+  NEXT="$THEME_DARK"
+  WALL="$(ls ~/.config/omarchy/themes/$NEXT/backgrounds/*.jpg 2>/dev/null | head -n1)"
+  CURSOR_MODE="dark"
+else
+  NEXT="$THEME_LIGHT"
+  WALL="$(ls ~/.config/omarchy/themes/$NEXT/backgrounds/*.jpg 2>/dev/null | head -n1)"
+  CURSOR_MODE="light"
+fi
+if command -v omarchy-theme-set >/dev/null 2>&1; then
+  omarchy-theme-set "$NEXT"
+else
+  echo "$NEXT" > "$CUR_FILE"
+fi
+[[ -n "${WALL:-}" ]] && set_wallpaper "$WALL"
+if command -v hyprctl >/dev/null 2>&1; then
+  hyprctl setcursor Prismatic-Shards 32 2>/dev/null || true
+  hyprctl reload 2>/dev/null || true
+fi
+notify-send "Prismatic Shards" "Switched to $NEXT ($CURSOR_MODE glass)" 2>/dev/null || true
+echo "Switched to $NEXT"

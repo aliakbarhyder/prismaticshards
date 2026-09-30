@@ -1,0 +1,55 @@
+# Prismatic Shards — light palette
+#
+# Frosted glass, daylight, the faintest refraction.
+#
+# Installed as the companion theme `prismatic-shards-light`. Omarchy themes are
+# single-mode by design (`mode = "light"` here), so light/dark is a pair of
+# themes rather than a runtime switch. `prismatic-shards-theme-toggle` moves
+# between the two, and docs/theme-switching.md explains why that is the native
+# approach rather than a compromise.
+
+mode = "light"
+
+accent = "#1677FF"
+selection = "#CFE0FF"
+muted = "#89919D"
+
+background = "#F3F5F8"
+dark_background = "#E9ECF1"
+darker_background = "#DDE2EA"
+lighter_background = "#FFFFFF"
+
+foreground = "#16181C"
+dark_foreground = "#6E7681"
+light_foreground = "#0E1013"
+bright_foreground = "#101317"
+
+red = "#D94350"
+yellow = "#B97800"
+orange = "#CC6B14"
+green = "#279662"
+cyan = "#009FCF"
+blue = "#1677FF"
+magenta = "#B86BD6"
+brown = "#8A6A4F"
+
+bright_red = "#C43B47"
+bright_yellow = "#9C6400"
+bright_green = "#1F7E52"
+bright_cyan = "#0089B3"
+bright_blue = "#0F62D6"
+bright_magenta = "#9E4EBE"
+
+# --- Prismatic extension tokens -------------------------------------------
+surface = "#FFFFFF"
+elevated = "#FFFFFF"
+violet = "#705FE8"
+pink = "#D889BA"
+
+selection_background = "#CFE0FF"
+selection_foreground = "#0B1220"
+
+# --- Refracted light ------------------------------------------------------
+# Daylight through white glass: the same three hues, at far lower intensity.
+hyprland_active_border = "rgba(1677ffcc) rgba(705febbb) rgba(d889baa6) 45deg"
+hyprland_inactive_border = "rgba(89919d4d) rgba(e9ecf1e6) 45deg"

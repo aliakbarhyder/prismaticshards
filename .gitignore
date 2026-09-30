@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Icon?
+Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+*[Cc]onflict*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.mypy_cache/
+.ruff_cache/
+
+# Node (tooling only — the theme itself has no JS runtime)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build output / generated caches
+build/
+dist/
+*.tmp
+*.log
+/tmp/
+.cache/
+
+# Local scratch that must never be published
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa*
+known_hosts
+secrets/
+personal/
+private/

@@ -1,0 +1,9 @@
+{
+  "name": "Prismatic-Shards",
+  "version": "1.0.0",
+  "comment": "Fractured light. Unified system.",
+  "type": "png",
+  "hotspot_x": 12,
+  "hotspot_y": 13,
+  "shape": "grabbing"
+}

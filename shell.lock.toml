@@ -1,0 +1,17 @@
+# Prismatic Shards — lock screen overrides (dark)
+#
+# A `shell.<section>.toml` file replaces one section of shell.toml after it is
+# generated, so this file only carries the [lock] tokens that differ from the
+# shell defaults. The filename decides the target section, so no header here.
+
+background = "#08090B"
+background-alpha = 0.70
+text = "#F2F4F8"
+placeholder = "#737B88"
+text-error = "#FF6472"
+border = "rgba(737b88b3) rgba(171b22aa) 45deg"
+border-active = "rgba(4da3ffd9) rgba(8b7cffd9) rgba(f2a7d8b3) 45deg"
+border-error = "#FF6472"
+border-alpha = 0.90
+selection = "#4DA3FF"
+selection-alpha = 0.45

@@ -1,0 +1,20 @@
+{
+  "name": "Prismatic-Shards",
+  "version": "1.0.0",
+  "comment": "Fractured light. Unified system.",
+  "author": "Ali Akbar Hyder",
+  "license": "Prismatic Shards Personal Use License",
+  "repository": "https://github.com/aliakbarhyder/prismaticshards",
+  "homepage": "https://github.com/aliakbarhyder/prismaticshards",
+  "description": "Liquid Glass-inspired Omarchy theme with prismatic color system. Includes smooth, spring-like cursor movement with prismatic blue, violet and pink accents.",
+  "mode": "dark",
+  "sizes": [
+    24,
+    32,
+    48,
+    64,
+    128,
+    256
+  ],
+  "generated_at": "2026-09-30T13:52:41Z"
+}

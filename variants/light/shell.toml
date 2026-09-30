@@ -1,0 +1,148 @@
+# Prismatic Shards — Omarchy shell surfaces (light)
+#
+# Frosted glass in daylight. Same token set and same structure as the dark
+# theme's shell.toml; the alphas are higher because light glass hides less of
+# what is behind it, and text contrast has to survive a bright wallpaper.
+
+[bar]
+background = "#F3F5F8"
+background-alpha = 0.74
+text = "#16181C"
+active = "#705FE8"
+scale-with-font = true
+size-horizontal = 30
+size-vertical = 34
+
+[hyprland]
+active-border = "rgba(1677ffcc) rgba(705febbb) rgba(d889baa6) 45deg"
+active-border-foreground = "rgba(16181ce6) rgba(009fcfe6) 45deg"
+
+[controls]
+normal-color = "#16181C"
+normal-fill-alpha = 0.04
+normal-border = "#16181C"
+normal-border-width = 1
+normal-border-alpha = 0.14
+
+hover-cursor-color = "#16181C"
+hover-cursor-fill-alpha = 0.07
+hover-cursor-border = "#1677FF"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.40
+
+focus-color = "#16181C"
+focus-fill-alpha = 0.07
+focus-border = "#009FCF"
+focus-border-width = 1
+focus-border-alpha = 0.50
+
+selected-color = "#16181C"
+selected-fill-alpha = 0.12
+selected-border = "#1677FF"
+selected-border-width = 1
+selected-border-alpha = 0.55
+
+pressed-fill-alpha = 0.18
+selection-fill-alpha = 0.24
+
+[spacing]
+scale = 1.0
+scale-with-font = true
+panel-gap = 15
+panel-padding = 20
+popup-padding = 16
+row-gap = 9
+row-padding-x = 13
+control-padding-x = 11
+control-padding-y = 6
+control-height = 30
+popup-row-height = 30
+
+[font]
+base-size = 12
+
+[popups]
+background = "#FFFFFF"
+background-alpha = 0.90
+text = "#16181C"
+border = "hyprland.active-border"
+border-alpha = 0.40
+
+[tooltip]
+background = "#FFFFFF"
+background-alpha = 0.96
+text = "#16181C"
+border = "hyprland.active-border-foreground"
+border-alpha = 0.28
+
+[notifications]
+background = "#FFFFFF"
+background-alpha = 0.90
+text = "#16181C"
+border = "hyprland.active-border"
+border-alpha = 0.45
+border-width = 1
+border-width-left = 3
+countdown = "#009FCF"
+
+[launcher]
+background = "#FFFFFF"
+background-alpha = 0.92
+text = "#16181C"
+border = "hyprland.active-border"
+border-alpha = 0.50
+scrim = "#F3F5F8"
+scrim-alpha = 0.50
+selected-background = "#1677FF"
+selected-background-alpha = 0.14
+selected-text = "#0F62D6"
+selected-border = "#1677FF"
+selected-border-alpha = 0.70
+
+[menu]
+background = "#FFFFFF"
+background-alpha = 0.94
+text = "#16181C"
+border = "hyprland.active-border"
+border-alpha = 0.50
+scrim = "#F3F5F8"
+scrim-alpha = 0.50
+selected-background = "#1677FF"
+selected-background-alpha = 0.12
+selected-text = "#0F62D6"
+selected-border = "#1677FF"
+selected-border-alpha = 0.60
+
+[polkit]
+background = "#FFFFFF"
+background-alpha = 0.94
+text = "#16181C"
+text-error = "#D94350"
+border = "hyprland.active-border"
+border-error = "#D94350"
+border-alpha = 0.50
+scrim = "#F3F5F8"
+scrim-alpha = 0.55
+accent = "#1677FF"
+
+[lock]
+background = "#F3F5F8"
+background-alpha = 0.76
+text = "#16181C"
+placeholder = "#89919D"
+text-error = "#D94350"
+border = "rgba(89919d99) rgba(e9ecf1e6) 45deg"
+border-active = "hyprland.active-border"
+border-error = "#D94350"
+border-alpha = 0.85
+selection = "#1677FF"
+selection-alpha = 0.35
+
+[image-picker]
+scrim = "#F3F5F8"
+scrim-alpha = 0.60
+text = "#16181C"
+selected-border = "#1677FF"
+selected-border-alpha = 1.0
+unselected-border = "#16181C"
+unselected-border-alpha = 0.18
