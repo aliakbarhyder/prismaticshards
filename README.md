@@ -61,7 +61,7 @@ Based on the Omarchy `colors.toml` architecture, providing semantic color names 
    # Clone this repository
    git clone https://github.com/aliakbarhyder/prismaticshards.git
    # Install using Omarchy's theme system
-   omarchy theme install prismatic-shards
+   omarchy theme install https://github.com/aliakbarhyder/prismaticshards.git
    ```
 
 2. **Manual Installation**:
